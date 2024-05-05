@@ -6,8 +6,6 @@ pipeline {
 
     }
 
-parameters { choice(name: 'GOALS', choices: ['compile', 'package', 'clean package']) }
-
     stages {
         stage('source-code and sonarcube') {
             steps {
